@@ -48,6 +48,14 @@ sudo apt-get install omxplayer
 ```
 - From the next boot the RPi should decode.
 
+## Force HDMI output always
+- To force HDMI output from the RPI always, uncoment the following lines in */boot/config.txt*
+```
+hdmi_force_hotplug=1
+hdmi_drive=2
+```
+
+
 ## Test
 - Configure PC with this IP 192.168.1.10.
 - Make a simple source of video stream for instance, use [VLC to stream](https://www.howtogeek.com/118075/how-to-stream-videos-and-music-over-the-network-using-vlc/) now the streaming source will be "rtsp://192.168.1.10:8554/"
